@@ -1,0 +1,84 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.table-container {
+   
+    display:flex;
+    align-items:center;
+}
+
+.login-table {
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ddd;
+    width: 70px;
+    margin-bottom:30px;
+}
+
+    .login-table td {
+        padding: 10px;
+        border-radius: 5px;
+        width: 70px;
+    }
+
+    .login-table input[type="text"], .login-table input[type="password"] {
+        width: auto;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .login-table input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border-radius: 3px;
+    }
+
+        .login-table input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+.gridview {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    border-radius:10px;
+    background-color:antiquewhite;
+   
+}
+
+    .gridview th, .gridview td {
+        padding: 8px 12px;
+        border: 1px solid #ddd;
+        background-color: antiquewhite;
+        
+    }
+
+    .gridview th {
+        background-color: wheat;      
+        
+    }
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    width: 150px;
+    display: inline-block;
+}
+
+.image-container img {
+    border-radius: 10px;
+}

@@ -1,0 +1,14 @@
+﻿.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    align-items:center;
+    flex-direction:column;
+  
+}
+
+    .video-container iframe {
+        width: 600px; /* Her bir video genişliği */
+        height: auto; /* Her bir video yüksekliği */
+        border: none; /* Iframe kenarlıklarını kaldırmak için */
+    }

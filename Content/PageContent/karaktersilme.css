@@ -1,0 +1,61 @@
+﻿.delete-page{
+    height:70vh;
+}
+
+.form-container {
+    max-width: 400px;
+    min-width: 220px;
+    height: 250px;
+    margin: auto; /* Ortalamak için otomatik kenar boşluğu */
+    padding: 20px; /* İç kenar boşluğunu ayarla */
+    background-color: #f2f2f2; /* Arka plan rengini belirle */
+    border-radius: 5px; /* Kenarları yuvarla */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Gölge efekti ekle */
+    border: solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form elemanları için genel stil */
+.form-group {
+    margin-bottom: 15px;
+    width:200px;
+}
+
+
+label {
+    display: block; /* Etiketleri blok element olarak görüntüle */
+    font-weight: bold; /* Kalın font ağırlığı belirle */
+    margin-bottom: 5px; /* Etiketlerin altına biraz boşluk bırak */
+}
+
+/* Metin kutuları için stil */
+input[type="text"] {
+    width: 100%; /* Metin kutusunun genişliğini ayarla */
+    padding: 10px; /* Dolguyu ayarla */
+    border: 1px solid #ccc; /* Kenarlık oluştur */
+    border-radius: 4px; /* Kenarları yuvarla */
+    box-sizing: border-box; /* Kutu modelini belirle */
+}
+
+/* Silme düğmesi için stil */
+.button-form {
+    background-color: #dc3545; /* Arkaplan rengini belirle */
+    color: white; /* Yazı rengini belirle */
+    padding: 10px 20px; /* Dolguyu ayarla */
+    border: none; /* Kenarlık oluşturma */
+
+    cursor: pointer; /* Fare işaretçisini ayarla */
+    width: 100%; /* Düğmenin genişliğini ayarla */
+}
+
+/* Sonuç etiketi için stil */
+#ResultLabel {
+    border:solid 1px;
+    border-radius:3px;
+    margin-top: 10px; /* Üst kısmına biraz boşluk bırak */
+    display: block; /* Etiketi blok element olarak görüntüle */
+    margin-top:10px;
+}

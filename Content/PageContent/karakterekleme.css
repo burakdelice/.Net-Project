@@ -1,0 +1,53 @@
+﻿/* Genel form stilini ayarla */
+.form-container {
+    max-width: 400px; /* Form genişliğini belirle */
+    margin: auto; /* Formu ortala */
+    padding: 20px; /* Form içeriğinden kenar boşluğu bırak */
+    background-color: #f2f2f2; /* Arka plan rengini belirle */
+    border-radius: 10px; /* Köşeleri yuvarla */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Hafif bir gölge ekle */
+}
+
+    /* Form giriş alanlarını ayarla */
+    .form-container input[type=text],
+    .form-container input[type=password] {
+        width: 100%; /* Giriş alanlarını tam genişlik yap */
+        padding: 12px; /* Dolguyu ayarla */
+        margin: 8px 0; /* Kenar boşluğunu ayarla */
+        display: inline-block; /* Giriş alanlarını yan yana göster */
+        border: 1px solid #ccc; /* Kenarlık rengini ayarla */
+        border-radius: 4px; /* Kenarları yuvarla */
+        box-sizing: border-box; /* Giriş alanlarının boyutunu belirle */
+    }
+
+    /* Form butonunu ayarla */
+.button-form  {
+    background-color: #4CAF50; /* Arkaplan rengini belirle */
+    color: white; /* Yazı rengini belirle */
+    padding: 14px 20px; /* Dolguyu ayarla */
+    margin: 8px 0; /* Kenar boşluğunu ayarla */
+    border: none; /* Kenarlık oluşturma */
+    border-radius: 4px; /* Kenarları yuvarla */
+    cursor: pointer; /* Fare işaretçisini ayarla */
+    width: 100%; /* Buton genişliğini ayarla */
+}
+
+        /* Form butonu üzerine geldiğinde */
+.button-form:hover {
+    background-color: #45a049; /* Arkaplan rengini değiştir */
+}
+
+    /* Form içindeki içerik (örneğin başlık) */
+    .form-container .form-content {
+        text-align: center; /* İçeriği ortala */
+    }
+
+    /* Form içindeki bağlantıları ayarla */
+    .form-container a {
+        color: #2196F3; /* Bağlantı rengini ayarla */
+    }
+
+        /* Form içindeki bağlantıların üzerine geldiğinde */
+        .form-container a:hover {
+            color: #0b7dda; /* Bağlantı rengini değiştir */
+        }

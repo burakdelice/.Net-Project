@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaTemplate.master.cs" Inherits="BBS635_Demo1.AnaTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Rick ve Morty Karakter Yönetimi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            background: black;
+            height: 15vh;
+        }
+        header {
+            background: lightgray;
+            height: 12vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color:seagreen;
+        }
+        header, footer, article, nav {
+            padding: 15px;
+        }
+        .menu {
+            display: flex;
+            align-self: center;
+            margin-left: auto;
+            gap: 10px; /* Aralıktaki boşluğu ayarlayın */
+            padding: 0px;
+            height: 40px;
+            
+        }
+
+        .menu a {
+            background-color: transparent;
+            border: 0.2px;
+            border-radius:10px;
+            padding: 5px 10px;
+            transition: all 0.2s ease-in-out;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color:wheat;
+}
+
+.menu a:hover {
+    background-color: #ff0000; /* Yeşil arka plan rengi */
+    color: white; /* Yazı rengi */
+    transform: scale(1.05); /* Büyüme efekti */
+}
+
+.menu a:focus {
+    outline: none; /* Odaklandığında kenarlık olmasını engeller */
+}
+        /* Daha küçük ekranlar için duyarlılık */
+        @media (max-width: 580px) {
+            .menu {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+            }
+        }
+        #logoimg {
+            height: 50px;
+            align-items: center;
+            padding-left:30px;
+        }
+       
+      
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <header>
+            <img id="logoimg" src="img/logo2.png" alt="Rick ve Morty Logosu" />
+            <nav class="menu">
+                 <a href="homepage.aspx" class="menu-button">Ana Sayfa</a>
+                <a href="karakterlistesi.aspx" class="menu-button">Karakterler</a>
+                 <a href="karakterekleme.aspx" class="menu-button">Karakter Ekle</a>
+                 <a href="karaktersilme.aspx" class="menu-button">Karakter Sil</a>
+                <a href="videolar.aspx" class="menu-button">Videolar</a>
+               
+            </nav>
+        </header>
+        <div id="main">
+            <article>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </article>
+            <article>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</article>
+        </div>
+        <footer>
+            <div style="width:100%; margin:15px; text-align:center; color:white; font-family:Arial; font-size:15px;">
+                Burak Delice<br />
+                <asp:Label ID="Label1" runat="server" Text="BBS635-İnternet Teknolojileri ve Uygulamaları Projesi"></asp:Label>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
